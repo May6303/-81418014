@@ -1,0 +1,6 @@
+{
+  "name": "夜市神射手 - Night Market Sharpshooter",
+  "description": "經典台灣夜市空氣槍與BB彈射擊遊戲！瞄準彩色氣球、擊倒鐵罐金字塔、射下旋轉小黃鴨，累積連擊贏取夜市彩券，兌換巨型泰迪熊與限定獎品！",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
