@@ -551,9 +551,17 @@ async function startServer() {
       server: { middlewareMode: true },
       appType: 'spa',
     });
+    // Redirect root to custom base path
+    app.get('/', (_req, res) => {
+      res.redirect('/-81418014/');
+    });
     app.use(vite.middlewares);
   } else {
     const distPath = path.resolve(process.cwd(), 'dist');
+    app.get('/', (_req, res) => {
+      res.redirect('/-81418014/');
+    });
+    app.use('/-81418014', express.static(distPath));
     app.use(express.static(distPath));
     app.get('*', (_req, res) => {
       res.sendFile(path.resolve(distPath, 'index.html'));
